@@ -2,7 +2,21 @@
 
 This is a very simple library for consuming [Coinpayments](https://coinpayments.net).
 
-## Development server
+## How to use
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```c#
+CoinApi api = new CoinApi(PublicApiKey,PrivateApiKey);
+```
+
+### Generate a receive payment request
+
+```c#
+api.ReceiveAsync(ReceiveTransaction transaction);
+```
+
+### Generate a withdrawal request
+
+```c#
+api.TransferAsync(SendTransaction transaction);
+```
 
