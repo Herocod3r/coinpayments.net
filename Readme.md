@@ -20,3 +20,6 @@ api.ReceiveAsync(ReceiveTransaction transaction);
 api.TransferAsync(SendTransaction transaction);
 ```
 
+###Get it on nuget
+
+`https://www.nuget.org/packages/jetcipher.CoinPayment.Net/`
